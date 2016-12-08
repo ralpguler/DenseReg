@@ -1,0 +1,4 @@
+*.caffemodel
+.ipynb_checkpoints
+.DS_Store
+
