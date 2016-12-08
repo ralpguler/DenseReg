@@ -1,0 +1,3 @@
+[submodule "DeepLab-Context2"]
+	path = DeepLab-Context2
+	url = git@github.com:TheLegendAli/DeepLab-Context2.git
