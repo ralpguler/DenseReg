@@ -13,7 +13,7 @@ layer {
 	top: "conv1"
 	name: "conv1"
 		type: "Convolution"
-	deletetop: true
+	 
 	param {
 		name: "conv1_0"
                lr_mult: 1
@@ -33,7 +33,7 @@ layer {
 	top: "conv1"
 	name: "bn_conv1"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -57,7 +57,7 @@ layer {
 	top: "conv1"
 	name: "scale_conv1"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -97,8 +97,8 @@ layer {
 	top: "res2a_branch1"
 	name: "res2a_branch1"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res2a_branch1_0"
                lr_mult: 1
@@ -118,7 +118,7 @@ layer {
 	top: "res2a_branch1"
 	name: "bn2a_branch1"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -142,7 +142,7 @@ layer {
 	top: "res2a_branch1"
 	name: "scale2a_branch1"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -162,8 +162,8 @@ layer {
 	top: "res2a_branch2a"
 	name: "res2a_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res2a_branch2a_0"
                lr_mult: 1
@@ -183,7 +183,7 @@ layer {
 	top: "res2a_branch2a"
 	name: "bn2a_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -207,7 +207,7 @@ layer {
 	top: "res2a_branch2a"
 	name: "scale2a_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -234,8 +234,8 @@ layer {
 	top: "res2a_branch2b"
 	name: "res2a_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res2a_branch2b_0"
                lr_mult: 1
@@ -255,7 +255,7 @@ layer {
 	top: "res2a_branch2b"
 	name: "bn2a_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -279,7 +279,7 @@ layer {
 	top: "res2a_branch2b"
 	name: "scale2a_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -306,8 +306,8 @@ layer {
 	top: "res2a_branch2c"
 	name: "res2a_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res2a_branch2c_0"
                lr_mult: 1
@@ -327,7 +327,7 @@ layer {
 	top: "res2a_branch2c"
 	name: "bn2a_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -351,7 +351,7 @@ layer {
 	top: "res2a_branch2c"
 	name: "scale2a_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -372,8 +372,8 @@ layer {
 	top: "res2a"
 	name: "res2a"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -388,8 +388,8 @@ layer {
 	top: "res2b_branch2a"
 	name: "res2b_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res2b_branch2a_0"
                lr_mult: 1
@@ -409,7 +409,7 @@ layer {
 	top: "res2b_branch2a"
 	name: "bn2b_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -433,7 +433,7 @@ layer {
 	top: "res2b_branch2a"
 	name: "scale2b_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -460,8 +460,8 @@ layer {
 	top: "res2b_branch2b"
 	name: "res2b_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res2b_branch2b_0"
                lr_mult: 1
@@ -481,7 +481,7 @@ layer {
 	top: "res2b_branch2b"
 	name: "bn2b_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -505,7 +505,7 @@ layer {
 	top: "res2b_branch2b"
 	name: "scale2b_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -532,8 +532,8 @@ layer {
 	top: "res2b_branch2c"
 	name: "res2b_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res2b_branch2c_0"
                lr_mult: 1
@@ -553,7 +553,7 @@ layer {
 	top: "res2b_branch2c"
 	name: "bn2b_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -577,7 +577,7 @@ layer {
 	top: "res2b_branch2c"
 	name: "scale2b_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -598,8 +598,8 @@ layer {
 	top: "res2b"
 	name: "res2b"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -614,8 +614,8 @@ layer {
 	top: "res2c_branch2a"
 	name: "res2c_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res2c_branch2a_0"
                lr_mult: 1
@@ -635,7 +635,7 @@ layer {
 	top: "res2c_branch2a"
 	name: "bn2c_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -659,7 +659,7 @@ layer {
 	top: "res2c_branch2a"
 	name: "scale2c_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -686,8 +686,8 @@ layer {
 	top: "res2c_branch2b"
 	name: "res2c_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res2c_branch2b_0"
                lr_mult: 1
@@ -707,7 +707,7 @@ layer {
 	top: "res2c_branch2b"
 	name: "bn2c_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -731,7 +731,7 @@ layer {
 	top: "res2c_branch2b"
 	name: "scale2c_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -758,8 +758,8 @@ layer {
 	top: "res2c_branch2c"
 	name: "res2c_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res2c_branch2c_0"
                lr_mult: 1
@@ -779,7 +779,7 @@ layer {
 	top: "res2c_branch2c"
 	name: "bn2c_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -803,7 +803,7 @@ layer {
 	top: "res2c_branch2c"
 	name: "scale2c_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -824,8 +824,8 @@ layer {
 	top: "res2c"
 	name: "res2c"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -840,8 +840,8 @@ layer {
 	top: "res3a_branch1"
 	name: "res3a_branch1"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res3a_branch1_0"
                lr_mult: 1
@@ -861,7 +861,7 @@ layer {
 	top: "res3a_branch1"
 	name: "bn3a_branch1"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -885,7 +885,7 @@ layer {
 	top: "res3a_branch1"
 	name: "scale3a_branch1"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -905,8 +905,8 @@ layer {
 	top: "res3a_branch2a"
 	name: "res3a_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res3a_branch2a_0"
                lr_mult: 1
@@ -926,7 +926,7 @@ layer {
 	top: "res3a_branch2a"
 	name: "bn3a_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -950,7 +950,7 @@ layer {
 	top: "res3a_branch2a"
 	name: "scale3a_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -977,8 +977,8 @@ layer {
 	top: "res3a_branch2b"
 	name: "res3a_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res3a_branch2b_0"
                lr_mult: 1
@@ -998,7 +998,7 @@ layer {
 	top: "res3a_branch2b"
 	name: "bn3a_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -1022,7 +1022,7 @@ layer {
 	top: "res3a_branch2b"
 	name: "scale3a_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -1049,8 +1049,8 @@ layer {
 	top: "res3a_branch2c"
 	name: "res3a_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res3a_branch2c_0"
                lr_mult: 1
@@ -1070,7 +1070,7 @@ layer {
 	top: "res3a_branch2c"
 	name: "bn3a_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -1094,7 +1094,7 @@ layer {
 	top: "res3a_branch2c"
 	name: "scale3a_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -1115,8 +1115,8 @@ layer {
 	top: "res3a"
 	name: "res3a"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -1131,8 +1131,8 @@ layer {
 	top: "res3b1_branch2a"
 	name: "res3b1_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res3b1_branch2a_0"
                lr_mult: 1
@@ -1152,7 +1152,7 @@ layer {
 	top: "res3b1_branch2a"
 	name: "bn3b1_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -1176,7 +1176,7 @@ layer {
 	top: "res3b1_branch2a"
 	name: "scale3b1_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -1203,8 +1203,8 @@ layer {
 	top: "res3b1_branch2b"
 	name: "res3b1_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res3b1_branch2b_0"
                lr_mult: 1
@@ -1224,7 +1224,7 @@ layer {
 	top: "res3b1_branch2b"
 	name: "bn3b1_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -1248,7 +1248,7 @@ layer {
 	top: "res3b1_branch2b"
 	name: "scale3b1_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -1275,8 +1275,8 @@ layer {
 	top: "res3b1_branch2c"
 	name: "res3b1_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res3b1_branch2c_0"
                lr_mult: 1
@@ -1296,7 +1296,7 @@ layer {
 	top: "res3b1_branch2c"
 	name: "bn3b1_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -1320,7 +1320,7 @@ layer {
 	top: "res3b1_branch2c"
 	name: "scale3b1_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -1341,8 +1341,8 @@ layer {
 	top: "res3b1"
 	name: "res3b1"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -1357,8 +1357,8 @@ layer {
 	top: "res3b2_branch2a"
 	name: "res3b2_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res3b2_branch2a_0"
                lr_mult: 1
@@ -1378,7 +1378,7 @@ layer {
 	top: "res3b2_branch2a"
 	name: "bn3b2_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -1402,7 +1402,7 @@ layer {
 	top: "res3b2_branch2a"
 	name: "scale3b2_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -1429,8 +1429,8 @@ layer {
 	top: "res3b2_branch2b"
 	name: "res3b2_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res3b2_branch2b_0"
                lr_mult: 1
@@ -1450,7 +1450,7 @@ layer {
 	top: "res3b2_branch2b"
 	name: "bn3b2_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -1474,7 +1474,7 @@ layer {
 	top: "res3b2_branch2b"
 	name: "scale3b2_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -1501,8 +1501,8 @@ layer {
 	top: "res3b2_branch2c"
 	name: "res3b2_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res3b2_branch2c_0"
                lr_mult: 1
@@ -1522,7 +1522,7 @@ layer {
 	top: "res3b2_branch2c"
 	name: "bn3b2_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -1546,7 +1546,7 @@ layer {
 	top: "res3b2_branch2c"
 	name: "scale3b2_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -1567,8 +1567,8 @@ layer {
 	top: "res3b2"
 	name: "res3b2"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -1583,8 +1583,8 @@ layer {
 	top: "res3b3_branch2a"
 	name: "res3b3_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res3b3_branch2a_0"
                lr_mult: 1
@@ -1604,7 +1604,7 @@ layer {
 	top: "res3b3_branch2a"
 	name: "bn3b3_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -1628,7 +1628,7 @@ layer {
 	top: "res3b3_branch2a"
 	name: "scale3b3_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -1655,8 +1655,8 @@ layer {
 	top: "res3b3_branch2b"
 	name: "res3b3_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res3b3_branch2b_0"
                lr_mult: 1
@@ -1676,7 +1676,7 @@ layer {
 	top: "res3b3_branch2b"
 	name: "bn3b3_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -1700,7 +1700,7 @@ layer {
 	top: "res3b3_branch2b"
 	name: "scale3b3_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -1727,8 +1727,8 @@ layer {
 	top: "res3b3_branch2c"
 	name: "res3b3_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res3b3_branch2c_0"
                lr_mult: 1
@@ -1748,7 +1748,7 @@ layer {
 	top: "res3b3_branch2c"
 	name: "bn3b3_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -1772,7 +1772,7 @@ layer {
 	top: "res3b3_branch2c"
 	name: "scale3b3_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -1793,8 +1793,8 @@ layer {
 	top: "res3b3"
 	name: "res3b3"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -1809,8 +1809,8 @@ layer {
 	top: "res4a_branch1"
 	name: "res4a_branch1"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4a_branch1_0"
                lr_mult: 1
@@ -1830,7 +1830,7 @@ layer {
 	top: "res4a_branch1"
 	name: "bn4a_branch1"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -1854,7 +1854,7 @@ layer {
 	top: "res4a_branch1"
 	name: "scale4a_branch1"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -1874,8 +1874,8 @@ layer {
 	top: "res4a_branch2a"
 	name: "res4a_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4a_branch2a_0"
                lr_mult: 1
@@ -1895,7 +1895,7 @@ layer {
 	top: "res4a_branch2a"
 	name: "bn4a_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -1919,7 +1919,7 @@ layer {
 	top: "res4a_branch2a"
 	name: "scale4a_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -1946,8 +1946,8 @@ layer {
 	top: "res4a_branch2b"
 	name: "res4a_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4a_branch2b_0"
                lr_mult: 1
@@ -1968,7 +1968,7 @@ layer {
 	top: "res4a_branch2b"
 	name: "bn4a_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -1992,7 +1992,7 @@ layer {
 	top: "res4a_branch2b"
 	name: "scale4a_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -2019,8 +2019,8 @@ layer {
 	top: "res4a_branch2c"
 	name: "res4a_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4a_branch2c_0"
                lr_mult: 1
@@ -2040,7 +2040,7 @@ layer {
 	top: "res4a_branch2c"
 	name: "bn4a_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -2064,7 +2064,7 @@ layer {
 	top: "res4a_branch2c"
 	name: "scale4a_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -2085,8 +2085,8 @@ layer {
 	top: "res4a"
 	name: "res4a"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -2101,8 +2101,8 @@ layer {
 	top: "res4b1_branch2a"
 	name: "res4b1_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b1_branch2a_0"
                lr_mult: 1
@@ -2122,7 +2122,7 @@ layer {
 	top: "res4b1_branch2a"
 	name: "bn4b1_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -2146,7 +2146,7 @@ layer {
 	top: "res4b1_branch2a"
 	name: "scale4b1_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -2173,8 +2173,8 @@ layer {
 	top: "res4b1_branch2b"
 	name: "res4b1_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b1_branch2b_0"
                lr_mult: 1
@@ -2195,7 +2195,7 @@ layer {
 	top: "res4b1_branch2b"
 	name: "bn4b1_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -2219,7 +2219,7 @@ layer {
 	top: "res4b1_branch2b"
 	name: "scale4b1_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -2246,8 +2246,8 @@ layer {
 	top: "res4b1_branch2c"
 	name: "res4b1_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b1_branch2c_0"
                lr_mult: 1
@@ -2267,7 +2267,7 @@ layer {
 	top: "res4b1_branch2c"
 	name: "bn4b1_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -2291,7 +2291,7 @@ layer {
 	top: "res4b1_branch2c"
 	name: "scale4b1_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -2312,8 +2312,8 @@ layer {
 	top: "res4b1"
 	name: "res4b1"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -2328,8 +2328,8 @@ layer {
 	top: "res4b2_branch2a"
 	name: "res4b2_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b2_branch2a_0"
                lr_mult: 1
@@ -2349,7 +2349,7 @@ layer {
 	top: "res4b2_branch2a"
 	name: "bn4b2_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -2373,7 +2373,7 @@ layer {
 	top: "res4b2_branch2a"
 	name: "scale4b2_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -2400,8 +2400,8 @@ layer {
 	top: "res4b2_branch2b"
 	name: "res4b2_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b2_branch2b_0"
                lr_mult: 1
@@ -2422,7 +2422,7 @@ layer {
 	top: "res4b2_branch2b"
 	name: "bn4b2_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -2446,7 +2446,7 @@ layer {
 	top: "res4b2_branch2b"
 	name: "scale4b2_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -2473,8 +2473,8 @@ layer {
 	top: "res4b2_branch2c"
 	name: "res4b2_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b2_branch2c_0"
                lr_mult: 1
@@ -2494,7 +2494,7 @@ layer {
 	top: "res4b2_branch2c"
 	name: "bn4b2_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -2518,7 +2518,7 @@ layer {
 	top: "res4b2_branch2c"
 	name: "scale4b2_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -2539,8 +2539,8 @@ layer {
 	top: "res4b2"
 	name: "res4b2"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -2555,8 +2555,8 @@ layer {
 	top: "res4b3_branch2a"
 	name: "res4b3_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b3_branch2a_0"
                lr_mult: 1
@@ -2576,7 +2576,7 @@ layer {
 	top: "res4b3_branch2a"
 	name: "bn4b3_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -2600,7 +2600,7 @@ layer {
 	top: "res4b3_branch2a"
 	name: "scale4b3_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -2627,8 +2627,8 @@ layer {
 	top: "res4b3_branch2b"
 	name: "res4b3_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b3_branch2b_0"
                lr_mult: 1
@@ -2649,7 +2649,7 @@ layer {
 	top: "res4b3_branch2b"
 	name: "bn4b3_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -2673,7 +2673,7 @@ layer {
 	top: "res4b3_branch2b"
 	name: "scale4b3_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -2700,8 +2700,8 @@ layer {
 	top: "res4b3_branch2c"
 	name: "res4b3_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b3_branch2c_0"
                lr_mult: 1
@@ -2721,7 +2721,7 @@ layer {
 	top: "res4b3_branch2c"
 	name: "bn4b3_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -2745,7 +2745,7 @@ layer {
 	top: "res4b3_branch2c"
 	name: "scale4b3_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -2766,8 +2766,8 @@ layer {
 	top: "res4b3"
 	name: "res4b3"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -2782,8 +2782,8 @@ layer {
 	top: "res4b4_branch2a"
 	name: "res4b4_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b4_branch2a_0"
                lr_mult: 1
@@ -2803,7 +2803,7 @@ layer {
 	top: "res4b4_branch2a"
 	name: "bn4b4_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -2827,7 +2827,7 @@ layer {
 	top: "res4b4_branch2a"
 	name: "scale4b4_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -2854,8 +2854,8 @@ layer {
 	top: "res4b4_branch2b"
 	name: "res4b4_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b4_branch2b_0"
                lr_mult: 1
@@ -2876,7 +2876,7 @@ layer {
 	top: "res4b4_branch2b"
 	name: "bn4b4_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -2900,7 +2900,7 @@ layer {
 	top: "res4b4_branch2b"
 	name: "scale4b4_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -2927,8 +2927,8 @@ layer {
 	top: "res4b4_branch2c"
 	name: "res4b4_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b4_branch2c_0"
                lr_mult: 1
@@ -2948,7 +2948,7 @@ layer {
 	top: "res4b4_branch2c"
 	name: "bn4b4_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -2972,7 +2972,7 @@ layer {
 	top: "res4b4_branch2c"
 	name: "scale4b4_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -2993,8 +2993,8 @@ layer {
 	top: "res4b4"
 	name: "res4b4"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -3009,8 +3009,8 @@ layer {
 	top: "res4b5_branch2a"
 	name: "res4b5_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b5_branch2a_0"
                lr_mult: 1
@@ -3030,7 +3030,7 @@ layer {
 	top: "res4b5_branch2a"
 	name: "bn4b5_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -3054,7 +3054,7 @@ layer {
 	top: "res4b5_branch2a"
 	name: "scale4b5_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -3081,8 +3081,8 @@ layer {
 	top: "res4b5_branch2b"
 	name: "res4b5_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b5_branch2b_0"
                lr_mult: 1
@@ -3103,7 +3103,7 @@ layer {
 	top: "res4b5_branch2b"
 	name: "bn4b5_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -3127,7 +3127,7 @@ layer {
 	top: "res4b5_branch2b"
 	name: "scale4b5_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -3154,8 +3154,8 @@ layer {
 	top: "res4b5_branch2c"
 	name: "res4b5_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b5_branch2c_0"
                lr_mult: 1
@@ -3175,7 +3175,7 @@ layer {
 	top: "res4b5_branch2c"
 	name: "bn4b5_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -3199,7 +3199,7 @@ layer {
 	top: "res4b5_branch2c"
 	name: "scale4b5_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -3220,8 +3220,8 @@ layer {
 	top: "res4b5"
 	name: "res4b5"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -3236,8 +3236,8 @@ layer {
 	top: "res4b6_branch2a"
 	name: "res4b6_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b6_branch2a_0"
                lr_mult: 1
@@ -3257,7 +3257,7 @@ layer {
 	top: "res4b6_branch2a"
 	name: "bn4b6_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -3281,7 +3281,7 @@ layer {
 	top: "res4b6_branch2a"
 	name: "scale4b6_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -3308,8 +3308,8 @@ layer {
 	top: "res4b6_branch2b"
 	name: "res4b6_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b6_branch2b_0"
                lr_mult: 1
@@ -3330,7 +3330,7 @@ layer {
 	top: "res4b6_branch2b"
 	name: "bn4b6_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -3354,7 +3354,7 @@ layer {
 	top: "res4b6_branch2b"
 	name: "scale4b6_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -3381,8 +3381,8 @@ layer {
 	top: "res4b6_branch2c"
 	name: "res4b6_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b6_branch2c_0"
                lr_mult: 1
@@ -3402,7 +3402,7 @@ layer {
 	top: "res4b6_branch2c"
 	name: "bn4b6_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -3426,7 +3426,7 @@ layer {
 	top: "res4b6_branch2c"
 	name: "scale4b6_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -3447,8 +3447,8 @@ layer {
 	top: "res4b6"
 	name: "res4b6"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -3463,8 +3463,8 @@ layer {
 	top: "res4b7_branch2a"
 	name: "res4b7_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b7_branch2a_0"
                lr_mult: 1
@@ -3484,7 +3484,7 @@ layer {
 	top: "res4b7_branch2a"
 	name: "bn4b7_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -3508,7 +3508,7 @@ layer {
 	top: "res4b7_branch2a"
 	name: "scale4b7_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -3535,8 +3535,8 @@ layer {
 	top: "res4b7_branch2b"
 	name: "res4b7_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b7_branch2b_0"
                lr_mult: 1
@@ -3557,7 +3557,7 @@ layer {
 	top: "res4b7_branch2b"
 	name: "bn4b7_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -3581,7 +3581,7 @@ layer {
 	top: "res4b7_branch2b"
 	name: "scale4b7_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -3608,8 +3608,8 @@ layer {
 	top: "res4b7_branch2c"
 	name: "res4b7_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b7_branch2c_0"
                lr_mult: 1
@@ -3629,7 +3629,7 @@ layer {
 	top: "res4b7_branch2c"
 	name: "bn4b7_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -3653,7 +3653,7 @@ layer {
 	top: "res4b7_branch2c"
 	name: "scale4b7_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -3674,8 +3674,8 @@ layer {
 	top: "res4b7"
 	name: "res4b7"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -3690,8 +3690,8 @@ layer {
 	top: "res4b8_branch2a"
 	name: "res4b8_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b8_branch2a_0"
                lr_mult: 1
@@ -3711,7 +3711,7 @@ layer {
 	top: "res4b8_branch2a"
 	name: "bn4b8_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -3735,7 +3735,7 @@ layer {
 	top: "res4b8_branch2a"
 	name: "scale4b8_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -3762,8 +3762,8 @@ layer {
 	top: "res4b8_branch2b"
 	name: "res4b8_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b8_branch2b_0"
                lr_mult: 1
@@ -3784,7 +3784,7 @@ layer {
 	top: "res4b8_branch2b"
 	name: "bn4b8_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -3808,7 +3808,7 @@ layer {
 	top: "res4b8_branch2b"
 	name: "scale4b8_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -3835,8 +3835,8 @@ layer {
 	top: "res4b8_branch2c"
 	name: "res4b8_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b8_branch2c_0"
                lr_mult: 1
@@ -3856,7 +3856,7 @@ layer {
 	top: "res4b8_branch2c"
 	name: "bn4b8_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -3880,7 +3880,7 @@ layer {
 	top: "res4b8_branch2c"
 	name: "scale4b8_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -3901,8 +3901,8 @@ layer {
 	top: "res4b8"
 	name: "res4b8"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -3917,8 +3917,8 @@ layer {
 	top: "res4b9_branch2a"
 	name: "res4b9_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b9_branch2a_0"
                lr_mult: 1
@@ -3938,7 +3938,7 @@ layer {
 	top: "res4b9_branch2a"
 	name: "bn4b9_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -3962,7 +3962,7 @@ layer {
 	top: "res4b9_branch2a"
 	name: "scale4b9_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -3989,8 +3989,8 @@ layer {
 	top: "res4b9_branch2b"
 	name: "res4b9_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b9_branch2b_0"
                lr_mult: 1
@@ -4011,7 +4011,7 @@ layer {
 	top: "res4b9_branch2b"
 	name: "bn4b9_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -4035,7 +4035,7 @@ layer {
 	top: "res4b9_branch2b"
 	name: "scale4b9_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -4062,8 +4062,8 @@ layer {
 	top: "res4b9_branch2c"
 	name: "res4b9_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b9_branch2c_0"
                lr_mult: 1
@@ -4083,7 +4083,7 @@ layer {
 	top: "res4b9_branch2c"
 	name: "bn4b9_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -4107,7 +4107,7 @@ layer {
 	top: "res4b9_branch2c"
 	name: "scale4b9_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -4128,8 +4128,8 @@ layer {
 	top: "res4b9"
 	name: "res4b9"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -4144,8 +4144,8 @@ layer {
 	top: "res4b10_branch2a"
 	name: "res4b10_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b10_branch2a_0"
                lr_mult: 1
@@ -4165,7 +4165,7 @@ layer {
 	top: "res4b10_branch2a"
 	name: "bn4b10_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -4189,7 +4189,7 @@ layer {
 	top: "res4b10_branch2a"
 	name: "scale4b10_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -4216,8 +4216,8 @@ layer {
 	top: "res4b10_branch2b"
 	name: "res4b10_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b10_branch2b_0"
                lr_mult: 1
@@ -4238,7 +4238,7 @@ layer {
 	top: "res4b10_branch2b"
 	name: "bn4b10_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -4262,7 +4262,7 @@ layer {
 	top: "res4b10_branch2b"
 	name: "scale4b10_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -4289,8 +4289,8 @@ layer {
 	top: "res4b10_branch2c"
 	name: "res4b10_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b10_branch2c_0"
                lr_mult: 1
@@ -4310,7 +4310,7 @@ layer {
 	top: "res4b10_branch2c"
 	name: "bn4b10_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -4334,7 +4334,7 @@ layer {
 	top: "res4b10_branch2c"
 	name: "scale4b10_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -4355,8 +4355,8 @@ layer {
 	top: "res4b10"
 	name: "res4b10"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -4371,8 +4371,8 @@ layer {
 	top: "res4b11_branch2a"
 	name: "res4b11_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b11_branch2a_0"
                lr_mult: 1
@@ -4392,7 +4392,7 @@ layer {
 	top: "res4b11_branch2a"
 	name: "bn4b11_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -4416,7 +4416,7 @@ layer {
 	top: "res4b11_branch2a"
 	name: "scale4b11_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -4443,8 +4443,8 @@ layer {
 	top: "res4b11_branch2b"
 	name: "res4b11_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b11_branch2b_0"
                lr_mult: 1
@@ -4465,7 +4465,7 @@ layer {
 	top: "res4b11_branch2b"
 	name: "bn4b11_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -4489,7 +4489,7 @@ layer {
 	top: "res4b11_branch2b"
 	name: "scale4b11_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -4516,8 +4516,8 @@ layer {
 	top: "res4b11_branch2c"
 	name: "res4b11_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b11_branch2c_0"
                lr_mult: 1
@@ -4537,7 +4537,7 @@ layer {
 	top: "res4b11_branch2c"
 	name: "bn4b11_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -4561,7 +4561,7 @@ layer {
 	top: "res4b11_branch2c"
 	name: "scale4b11_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -4582,8 +4582,8 @@ layer {
 	top: "res4b11"
 	name: "res4b11"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -4598,8 +4598,8 @@ layer {
 	top: "res4b12_branch2a"
 	name: "res4b12_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b12_branch2a_0"
                lr_mult: 1
@@ -4619,7 +4619,7 @@ layer {
 	top: "res4b12_branch2a"
 	name: "bn4b12_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -4643,7 +4643,7 @@ layer {
 	top: "res4b12_branch2a"
 	name: "scale4b12_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -4670,8 +4670,8 @@ layer {
 	top: "res4b12_branch2b"
 	name: "res4b12_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b12_branch2b_0"
                lr_mult: 1
@@ -4692,7 +4692,7 @@ layer {
 	top: "res4b12_branch2b"
 	name: "bn4b12_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -4716,7 +4716,7 @@ layer {
 	top: "res4b12_branch2b"
 	name: "scale4b12_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -4743,8 +4743,8 @@ layer {
 	top: "res4b12_branch2c"
 	name: "res4b12_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b12_branch2c_0"
                lr_mult: 1
@@ -4764,7 +4764,7 @@ layer {
 	top: "res4b12_branch2c"
 	name: "bn4b12_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -4788,7 +4788,7 @@ layer {
 	top: "res4b12_branch2c"
 	name: "scale4b12_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -4809,8 +4809,8 @@ layer {
 	top: "res4b12"
 	name: "res4b12"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -4825,8 +4825,8 @@ layer {
 	top: "res4b13_branch2a"
 	name: "res4b13_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b13_branch2a_0"
                lr_mult: 1
@@ -4846,7 +4846,7 @@ layer {
 	top: "res4b13_branch2a"
 	name: "bn4b13_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -4870,7 +4870,7 @@ layer {
 	top: "res4b13_branch2a"
 	name: "scale4b13_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -4897,8 +4897,8 @@ layer {
 	top: "res4b13_branch2b"
 	name: "res4b13_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b13_branch2b_0"
                lr_mult: 1
@@ -4919,7 +4919,7 @@ layer {
 	top: "res4b13_branch2b"
 	name: "bn4b13_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -4943,7 +4943,7 @@ layer {
 	top: "res4b13_branch2b"
 	name: "scale4b13_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -4970,8 +4970,8 @@ layer {
 	top: "res4b13_branch2c"
 	name: "res4b13_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b13_branch2c_0"
                lr_mult: 1
@@ -4991,7 +4991,7 @@ layer {
 	top: "res4b13_branch2c"
 	name: "bn4b13_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -5015,7 +5015,7 @@ layer {
 	top: "res4b13_branch2c"
 	name: "scale4b13_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -5036,8 +5036,8 @@ layer {
 	top: "res4b13"
 	name: "res4b13"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -5052,8 +5052,8 @@ layer {
 	top: "res4b14_branch2a"
 	name: "res4b14_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b14_branch2a_0"
                lr_mult: 1
@@ -5073,7 +5073,7 @@ layer {
 	top: "res4b14_branch2a"
 	name: "bn4b14_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -5097,7 +5097,7 @@ layer {
 	top: "res4b14_branch2a"
 	name: "scale4b14_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -5124,8 +5124,8 @@ layer {
 	top: "res4b14_branch2b"
 	name: "res4b14_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b14_branch2b_0"
                lr_mult: 1
@@ -5146,7 +5146,7 @@ layer {
 	top: "res4b14_branch2b"
 	name: "bn4b14_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -5170,7 +5170,7 @@ layer {
 	top: "res4b14_branch2b"
 	name: "scale4b14_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -5197,8 +5197,8 @@ layer {
 	top: "res4b14_branch2c"
 	name: "res4b14_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b14_branch2c_0"
                lr_mult: 1
@@ -5218,7 +5218,7 @@ layer {
 	top: "res4b14_branch2c"
 	name: "bn4b14_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -5242,7 +5242,7 @@ layer {
 	top: "res4b14_branch2c"
 	name: "scale4b14_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -5263,8 +5263,8 @@ layer {
 	top: "res4b14"
 	name: "res4b14"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -5279,8 +5279,8 @@ layer {
 	top: "res4b15_branch2a"
 	name: "res4b15_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b15_branch2a_0"
                lr_mult: 1
@@ -5300,7 +5300,7 @@ layer {
 	top: "res4b15_branch2a"
 	name: "bn4b15_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -5324,7 +5324,7 @@ layer {
 	top: "res4b15_branch2a"
 	name: "scale4b15_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -5351,8 +5351,8 @@ layer {
 	top: "res4b15_branch2b"
 	name: "res4b15_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b15_branch2b_0"
                lr_mult: 1
@@ -5373,7 +5373,7 @@ layer {
 	top: "res4b15_branch2b"
 	name: "bn4b15_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -5397,7 +5397,7 @@ layer {
 	top: "res4b15_branch2b"
 	name: "scale4b15_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -5424,8 +5424,8 @@ layer {
 	top: "res4b15_branch2c"
 	name: "res4b15_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b15_branch2c_0"
                lr_mult: 1
@@ -5445,7 +5445,7 @@ layer {
 	top: "res4b15_branch2c"
 	name: "bn4b15_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -5469,7 +5469,7 @@ layer {
 	top: "res4b15_branch2c"
 	name: "scale4b15_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -5490,8 +5490,8 @@ layer {
 	top: "res4b15"
 	name: "res4b15"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -5506,8 +5506,8 @@ layer {
 	top: "res4b16_branch2a"
 	name: "res4b16_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b16_branch2a_0"
                lr_mult: 1
@@ -5527,7 +5527,7 @@ layer {
 	top: "res4b16_branch2a"
 	name: "bn4b16_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -5551,7 +5551,7 @@ layer {
 	top: "res4b16_branch2a"
 	name: "scale4b16_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -5578,8 +5578,8 @@ layer {
 	top: "res4b16_branch2b"
 	name: "res4b16_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b16_branch2b_0"
                lr_mult: 1
@@ -5600,7 +5600,7 @@ layer {
 	top: "res4b16_branch2b"
 	name: "bn4b16_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -5624,7 +5624,7 @@ layer {
 	top: "res4b16_branch2b"
 	name: "scale4b16_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -5651,8 +5651,8 @@ layer {
 	top: "res4b16_branch2c"
 	name: "res4b16_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b16_branch2c_0"
                lr_mult: 1
@@ -5672,7 +5672,7 @@ layer {
 	top: "res4b16_branch2c"
 	name: "bn4b16_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -5696,7 +5696,7 @@ layer {
 	top: "res4b16_branch2c"
 	name: "scale4b16_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -5717,8 +5717,8 @@ layer {
 	top: "res4b16"
 	name: "res4b16"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -5733,8 +5733,8 @@ layer {
 	top: "res4b17_branch2a"
 	name: "res4b17_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b17_branch2a_0"
                lr_mult: 1
@@ -5754,7 +5754,7 @@ layer {
 	top: "res4b17_branch2a"
 	name: "bn4b17_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -5778,7 +5778,7 @@ layer {
 	top: "res4b17_branch2a"
 	name: "scale4b17_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -5805,8 +5805,8 @@ layer {
 	top: "res4b17_branch2b"
 	name: "res4b17_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b17_branch2b_0"
                lr_mult: 1
@@ -5827,7 +5827,7 @@ layer {
 	top: "res4b17_branch2b"
 	name: "bn4b17_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -5851,7 +5851,7 @@ layer {
 	top: "res4b17_branch2b"
 	name: "scale4b17_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -5878,8 +5878,8 @@ layer {
 	top: "res4b17_branch2c"
 	name: "res4b17_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b17_branch2c_0"
                lr_mult: 1
@@ -5899,7 +5899,7 @@ layer {
 	top: "res4b17_branch2c"
 	name: "bn4b17_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -5923,7 +5923,7 @@ layer {
 	top: "res4b17_branch2c"
 	name: "scale4b17_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -5944,8 +5944,8 @@ layer {
 	top: "res4b17"
 	name: "res4b17"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -5960,8 +5960,8 @@ layer {
 	top: "res4b18_branch2a"
 	name: "res4b18_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b18_branch2a_0"
                lr_mult: 1
@@ -5981,7 +5981,7 @@ layer {
 	top: "res4b18_branch2a"
 	name: "bn4b18_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -6005,7 +6005,7 @@ layer {
 	top: "res4b18_branch2a"
 	name: "scale4b18_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -6032,8 +6032,8 @@ layer {
 	top: "res4b18_branch2b"
 	name: "res4b18_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b18_branch2b_0"
                lr_mult: 1
@@ -6054,7 +6054,7 @@ layer {
 	top: "res4b18_branch2b"
 	name: "bn4b18_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -6078,7 +6078,7 @@ layer {
 	top: "res4b18_branch2b"
 	name: "scale4b18_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -6105,8 +6105,8 @@ layer {
 	top: "res4b18_branch2c"
 	name: "res4b18_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b18_branch2c_0"
                lr_mult: 1
@@ -6126,7 +6126,7 @@ layer {
 	top: "res4b18_branch2c"
 	name: "bn4b18_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -6150,7 +6150,7 @@ layer {
 	top: "res4b18_branch2c"
 	name: "scale4b18_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -6171,8 +6171,8 @@ layer {
 	top: "res4b18"
 	name: "res4b18"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -6187,8 +6187,8 @@ layer {
 	top: "res4b19_branch2a"
 	name: "res4b19_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b19_branch2a_0"
                lr_mult: 1
@@ -6208,7 +6208,7 @@ layer {
 	top: "res4b19_branch2a"
 	name: "bn4b19_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -6232,7 +6232,7 @@ layer {
 	top: "res4b19_branch2a"
 	name: "scale4b19_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -6259,8 +6259,8 @@ layer {
 	top: "res4b19_branch2b"
 	name: "res4b19_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b19_branch2b_0"
                lr_mult: 1
@@ -6281,7 +6281,7 @@ layer {
 	top: "res4b19_branch2b"
 	name: "bn4b19_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -6305,7 +6305,7 @@ layer {
 	top: "res4b19_branch2b"
 	name: "scale4b19_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -6332,8 +6332,8 @@ layer {
 	top: "res4b19_branch2c"
 	name: "res4b19_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b19_branch2c_0"
                lr_mult: 1
@@ -6353,7 +6353,7 @@ layer {
 	top: "res4b19_branch2c"
 	name: "bn4b19_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -6377,7 +6377,7 @@ layer {
 	top: "res4b19_branch2c"
 	name: "scale4b19_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -6398,8 +6398,8 @@ layer {
 	top: "res4b19"
 	name: "res4b19"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -6414,8 +6414,8 @@ layer {
 	top: "res4b20_branch2a"
 	name: "res4b20_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b20_branch2a_0"
                lr_mult: 1
@@ -6435,7 +6435,7 @@ layer {
 	top: "res4b20_branch2a"
 	name: "bn4b20_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -6459,7 +6459,7 @@ layer {
 	top: "res4b20_branch2a"
 	name: "scale4b20_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -6486,8 +6486,8 @@ layer {
 	top: "res4b20_branch2b"
 	name: "res4b20_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b20_branch2b_0"
                lr_mult: 1
@@ -6508,7 +6508,7 @@ layer {
 	top: "res4b20_branch2b"
 	name: "bn4b20_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -6532,7 +6532,7 @@ layer {
 	top: "res4b20_branch2b"
 	name: "scale4b20_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -6559,8 +6559,8 @@ layer {
 	top: "res4b20_branch2c"
 	name: "res4b20_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b20_branch2c_0"
                lr_mult: 1
@@ -6580,7 +6580,7 @@ layer {
 	top: "res4b20_branch2c"
 	name: "bn4b20_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -6604,7 +6604,7 @@ layer {
 	top: "res4b20_branch2c"
 	name: "scale4b20_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -6625,8 +6625,8 @@ layer {
 	top: "res4b20"
 	name: "res4b20"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -6641,8 +6641,8 @@ layer {
 	top: "res4b21_branch2a"
 	name: "res4b21_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b21_branch2a_0"
                lr_mult: 1
@@ -6662,7 +6662,7 @@ layer {
 	top: "res4b21_branch2a"
 	name: "bn4b21_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -6686,7 +6686,7 @@ layer {
 	top: "res4b21_branch2a"
 	name: "scale4b21_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -6713,8 +6713,8 @@ layer {
 	top: "res4b21_branch2b"
 	name: "res4b21_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b21_branch2b_0"
                lr_mult: 1
@@ -6735,7 +6735,7 @@ layer {
 	top: "res4b21_branch2b"
 	name: "bn4b21_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -6759,7 +6759,7 @@ layer {
 	top: "res4b21_branch2b"
 	name: "scale4b21_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -6786,8 +6786,8 @@ layer {
 	top: "res4b21_branch2c"
 	name: "res4b21_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b21_branch2c_0"
                lr_mult: 1
@@ -6807,7 +6807,7 @@ layer {
 	top: "res4b21_branch2c"
 	name: "bn4b21_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -6831,7 +6831,7 @@ layer {
 	top: "res4b21_branch2c"
 	name: "scale4b21_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -6852,8 +6852,8 @@ layer {
 	top: "res4b21"
 	name: "res4b21"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -6868,8 +6868,8 @@ layer {
 	top: "res4b22_branch2a"
 	name: "res4b22_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b22_branch2a_0"
                lr_mult: 1
@@ -6889,7 +6889,7 @@ layer {
 	top: "res4b22_branch2a"
 	name: "bn4b22_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -6913,7 +6913,7 @@ layer {
 	top: "res4b22_branch2a"
 	name: "scale4b22_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -6940,8 +6940,8 @@ layer {
 	top: "res4b22_branch2b"
 	name: "res4b22_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b22_branch2b_0"
                lr_mult: 1
@@ -6962,7 +6962,7 @@ layer {
 	top: "res4b22_branch2b"
 	name: "bn4b22_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -6986,7 +6986,7 @@ layer {
 	top: "res4b22_branch2b"
 	name: "scale4b22_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -7013,8 +7013,8 @@ layer {
 	top: "res4b22_branch2c"
 	name: "res4b22_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res4b22_branch2c_0"
                lr_mult: 1
@@ -7034,7 +7034,7 @@ layer {
 	top: "res4b22_branch2c"
 	name: "bn4b22_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -7058,7 +7058,7 @@ layer {
 	top: "res4b22_branch2c"
 	name: "scale4b22_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -7079,8 +7079,8 @@ layer {
 	top: "res4b22"
 	name: "res4b22"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -7095,8 +7095,8 @@ layer {
 	top: "res5a_branch1"
 	name: "res5a_branch1"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res5a_branch1_0"
                lr_mult: 1
@@ -7116,7 +7116,7 @@ layer {
 	top: "res5a_branch1"
 	name: "bn5a_branch1"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -7140,7 +7140,7 @@ layer {
 	top: "res5a_branch1"
 	name: "scale5a_branch1"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -7160,8 +7160,8 @@ layer {
 	top: "res5a_branch2a"
 	name: "res5a_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res5a_branch2a_0"
                lr_mult: 1
@@ -7181,7 +7181,7 @@ layer {
 	top: "res5a_branch2a"
 	name: "bn5a_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -7205,7 +7205,7 @@ layer {
 	top: "res5a_branch2a"
 	name: "scale5a_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -7232,8 +7232,8 @@ layer {
 	top: "res5a_branch2b"
 	name: "res5a_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res5a_branch2b_0"
                lr_mult: 1
@@ -7254,7 +7254,7 @@ layer {
 	top: "res5a_branch2b"
 	name: "bn5a_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -7278,7 +7278,7 @@ layer {
 	top: "res5a_branch2b"
 	name: "scale5a_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -7305,8 +7305,8 @@ layer {
 	top: "res5a_branch2c"
 	name: "res5a_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res5a_branch2c_0"
                lr_mult: 1
@@ -7326,7 +7326,7 @@ layer {
 	top: "res5a_branch2c"
 	name: "bn5a_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -7350,7 +7350,7 @@ layer {
 	top: "res5a_branch2c"
 	name: "scale5a_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -7371,8 +7371,8 @@ layer {
 	top: "res5a"
 	name: "res5a"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -7387,8 +7387,8 @@ layer {
 	top: "res5b_branch2a"
 	name: "res5b_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res5b_branch2a_0"
                lr_mult: 1
@@ -7408,7 +7408,7 @@ layer {
 	top: "res5b_branch2a"
 	name: "bn5b_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -7432,7 +7432,7 @@ layer {
 	top: "res5b_branch2a"
 	name: "scale5b_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -7459,8 +7459,8 @@ layer {
 	top: "res5b_branch2b"
 	name: "res5b_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res5b_branch2b_0"
                lr_mult: 1
@@ -7481,7 +7481,7 @@ layer {
 	top: "res5b_branch2b"
 	name: "bn5b_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -7505,7 +7505,7 @@ layer {
 	top: "res5b_branch2b"
 	name: "scale5b_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -7532,8 +7532,8 @@ layer {
 	top: "res5b_branch2c"
 	name: "res5b_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res5b_branch2c_0"
                lr_mult: 1
@@ -7553,7 +7553,7 @@ layer {
 	top: "res5b_branch2c"
 	name: "bn5b_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -7577,7 +7577,7 @@ layer {
 	top: "res5b_branch2c"
 	name: "scale5b_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -7598,8 +7598,8 @@ layer {
 	top: "res5b"
 	name: "res5b"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -7614,8 +7614,8 @@ layer {
 	top: "res5c_branch2a"
 	name: "res5c_branch2a"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res5c_branch2a_0"
                lr_mult: 1
@@ -7635,7 +7635,7 @@ layer {
 	top: "res5c_branch2a"
 	name: "bn5c_branch2a"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -7659,7 +7659,7 @@ layer {
 	top: "res5c_branch2a"
 	name: "scale5c_branch2a"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -7686,8 +7686,8 @@ layer {
 	top: "res5c_branch2b"
 	name: "res5c_branch2b"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res5c_branch2b_0"
                lr_mult: 1
@@ -7708,7 +7708,7 @@ layer {
 	top: "res5c_branch2b"
 	name: "bn5c_branch2b"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -7732,7 +7732,7 @@ layer {
 	top: "res5c_branch2b"
 	name: "scale5c_branch2b"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -7759,8 +7759,8 @@ layer {
 	top: "res5c_branch2c"
 	name: "res5c_branch2c"
 		type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 	param {
 		name: "res5c_branch2c_0"
                lr_mult: 1
@@ -7780,7 +7780,7 @@ layer {
 	top: "res5c_branch2c"
 	name: "bn5c_branch2c"
 		type: "BatchNorm"
-	deletetop: true
+	 
 
 	batch_norm_param {
 		use_global_stats: true
@@ -7804,7 +7804,7 @@ layer {
 	top: "res5c_branch2c"
 	name: "scale5c_branch2c"
 		type: "Scale"
-	deletetop: true
+	 
 
 	scale_param {
 		bias_term: true
@@ -7825,8 +7825,8 @@ layer {
 	top: "res5c"
 	name: "res5c"
 	type: "Eltwise"
-	deletebottom: true
-	deletetop: true
+	 
+	 
 }
 
 layer {
@@ -7842,8 +7842,8 @@ layer {
 layer {
   name: "Face_Horizontal"
   	type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
   bottom: "res5c"
   top: "Face_Horizontal"
   param {
@@ -7871,8 +7871,8 @@ layer {
 layer {
   name: "Face_Vertical"
   	type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
   bottom: "res5c"
   top: "Face_Vertical"
   param {
@@ -7900,8 +7900,8 @@ layer {
 layer {
   name: "Regression_Vertical"
   	type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
   bottom: "res5c"
   top: "Regression_Vertical"
   param {
@@ -7929,8 +7929,8 @@ layer {
 layer {
   name: "Regression_Horizontal"
   	type: "Convolution"
-	deletebottom: true
-	deletetop: true
+	 
+	 
   bottom: "res5c"
   top: "Regression_Horizontal"
   param {
