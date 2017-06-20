@@ -26,7 +26,16 @@ Namely, putting a uniform grid in the temple space onto the face, semantic face 
 ![](https://docs.google.com/drawings/d/1Jh2bSW5CGE8IHssDaj6D0i6zl2bY65xm7yPt5fRtIqM/pub?w=596&h=202)
  
  - - -
+ ### Running DenseReg for Human Bodies
+
++ You have to download the caffemodel by running the script: *get_densereg_model.sh*.
++ Then, you can use the ipyton notebook *DenseRegHumanBody.ipynb*, which demonstrates dense-correspondences for human bodies on sample images. Note that this network is not trained to be invariant to changes in scale. 
+
+Demonstrated result is depicted for a test sample.
+
+![](https://docs.google.com/drawings/d/1DxuWFrcQpSYCEGxdfZyhPemnc25vX1cknpYFe1E-uMk/pub?w=471&h=208)
  
+  - - -
 #### Bibtex entry for citations:
  
       @article{Guler2016DenseReg,
